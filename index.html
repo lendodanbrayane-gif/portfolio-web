@@ -1,13 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio web</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/output.css" />
+    <title>portfolio web</title>
+  </head>
+  <body class="max-w-/[1300px]/ border-2 m-auto">
+    <header class="flex md:flex-row justify-around items-center p-4 gap-6 font-bold">
+      <div class="flex gap-2 items-center text-2xl">
+        <img src="src/asset/logo/logo.png" alt="mon logo" />
+        <span>personal</span>
+      </div>
+
+      <!-- CHECKBOX CACHÉ -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <!-- BOUTON HAMBURGER -->
+      <label
+        for="menu-toggle"
+        class="flex flex-col justify-center items-center gap-1 cursor-pointer md:hidden"
+      >
+        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
+
+        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
+
+        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
+      </label>
+
+      <nav
+        class="hidden peer-checked:flex flex-col absolute top-20 left-0 w-full bg-white shadow-lg p-6 md:flex md:flex-row md:static md:w-auto md:bg-transparent md:shadow-none md:p-0"
+      >
+        <ul
+          class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-0 text-lg md:text-xl w-full md:m-auto"
+        >
+          <li class="hover:scale-105 transition duration-300">
+            <a href="#AboutMe">AboutMe</a>
+          </li>
+          <li class="hover:scale-105 transition duration-300">
+            <a href="#Skills">Skills</a>
+          </li>
+          <li class="hover:scale-105 transition duration-300">
+            <a href="#Project">Project</a>
+          </li>
+          <li class="hover:scale-105 transition duration-300">
+            <a href="#Contact Me">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="items-center gap-2 bg-black h-10 text-white text-center px-4 py-2 rounded-md transform hover:scale-105 transition duration-300 hidden md:flex"
+      >
+        <a href="#lien de mon cv">Resume</a>
+        <img class="bg-black" src="src/asset/Icon/icon.png" alt="arow" />
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
