@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="src/style/output.css" />
     <title>portfolio web</title>
   </head>
-  <body class="max-w-/[1300px]/ border-2 m-auto">
-    <header class="flex md:flex-row justify-around items-center p-4 gap-6 font-bold">
+  <body class="max-w-/[1300px]/ m-auto">
+    <header class="flex md:flex-row justify-around items-center p-4 gap-6 font-bold m-5">
+      <!-- logo -->
       <div class="flex gap-2 items-center text-2xl">
         <img src="src/asset/logo/logo.png" alt="mon logo" />
         <span>personal</span>
@@ -20,14 +21,10 @@
       <label
         for="menu-toggle"
         class="flex flex-col justify-center items-center gap-1 cursor-pointer md:hidden"
-      >
-        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
-
-        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
-
-        <span class="block w-8 h-0.75 bg-black rounded-full"></span>
+        ><img src="src/asset/Icon/menu-burger.png" alt="menu-burger" />
       </label>
 
+      <!-- lien de navigation -->
       <nav
         class="hidden peer-checked:flex flex-col absolute top-20 left-0 w-full bg-white shadow-lg p-6 md:flex md:flex-row md:static md:w-auto md:bg-transparent md:shadow-none md:p-0"
       >
@@ -48,14 +45,68 @@
           </li>
         </ul>
       </nav>
+
+      <!-- lien de téléchargement du cv -->
       <div
-        class="items-center gap-2 bg-black h-10 text-white text-center px-4 py-2 rounded-md transform hover:scale-105 transition duration-300 hidden md:flex"
+        class="items-center gap-2 bg-black h-10 text-white text-center px-4 py-2 rounded-md hover:scale-105 transition duration-300 hidden md:flex"
       >
         <a href="#lien de mon cv">Resume</a>
-        <img class="bg-black" src="src/asset/Icon/icon.png" alt="arow" />
+        <img class="bg-black" src="src/asset/Icon/icon.png" alt="arrow" />
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- section hero -->
+      <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto">
+        <div class="p-4 w-3xl relative z-10 inline space-y-5">
+          <!-- présentation -->
+          <h1 class="text-3xl md:text-4xl space-y-4">
+            Hello I'am
+            <strong
+              >Evren Shah. <br />
+              Frontend</strong
+            >
+            <span>Developer</span> <br />
+            Based In <b>India</b>.
+          </h1>
+          <p class="text-gray-600 text-sm max-w-lg">
+            I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to specimen book.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-20">
+            <!-- icon fb -->
+            <div
+              class="flex justify-center items-center bg-black size-10 rounded-sm hover:bg-gray-800 transition"
+            >
+              <img src="src/asset/Icon/facebook.png" alt="facebook" />
+            </div>
+            <!-- icon redis -->
+            <div
+              class="size-10 border border-black flex justify-center items-center rounded-sm hover:bg-gray-800 transition"
+            >
+              <img src="src/asset/Icon/redis.png" alt="redis" />
+            </div>
+            <!-- icon twiter -->
+            <div
+              class="size-10 border border-black flex justify-center items-center rounded-sm hover:bg-gray-800 transition"
+            >
+              <img src="src/asset/Icon/twiter.png" alt="twiter" />
+            </div>
+            <!-- icon discord -->
+            <div
+              class="size-10 border border-black flex justify-center items-center rounded-sm hover:bg-gray-800 transition"
+            >
+              <img src="src/asset/Icon/discord.png" alt="discord" />
+            </div>
+          </div>
+        </div>
+        <!-- Image-hero-section -->
+        <div class="w-\[900px\] h-130 p-4">
+          <img src="src/asset/Image/Image-hero-section.png" alt="hero" />
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
