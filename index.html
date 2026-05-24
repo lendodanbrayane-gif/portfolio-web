@@ -7,26 +7,26 @@
     <title>portfolio web</title>
   </head>
   <body class="max-w-full m-auto bg-[#F5F5F5]">
-    <header class="flex md:flex-row justify-around items-center shadow-2xl p-4 gap-6 font-bold m-5">
-      <!-- logo -->
-      <div class="flex gap-2 items-center text-2xl">
-        <img src="src/asset/logo/logo.png" alt="mon logo" />
-        <span>personal</span>
+    <header
+      class="flex flex-col md:flex-row justify-between md:justify-around items-center shadow-2xl p-4 gap-6 font-bold m-5"
+    >
+      <div class="flex justify-between items-center w-full md:w-auto">
+        <div class="flex gap-2 items-center text-2xl">
+          <img src="src/asset/logo/logo.png" alt="mon logo" />
+          <span>personal</span>
+        </div>
+
+        <label
+          for="menu-toggle"
+          class="flex flex-col justify-center items-center gap-1 cursor-pointer md:hidden"
+          ><img src="src/asset/Icon/menu-burger.png" alt="menu-burger" />
+        </label>
       </div>
 
-      <!-- CHECKBOX CACHÉ -->
       <input type="checkbox" id="menu-toggle" class="hidden peer" />
 
-      <!-- BOUTON HAMBURGER -->
-      <label
-        for="menu-toggle"
-        class="flex flex-col justify-center items-center gap-1 cursor-pointer md:hidden"
-        ><img src="src/asset/Icon/menu-burger.png" alt="menu-burger" />
-      </label>
-
-      <!-- lien de navigation -->
       <nav
-        class="hidden peer-checked:flex flex-col absolute top-20 left-0 w-full bg-white shadow-lg p-6 md:flex md:flex-row md:static md:w-auto md:bg-transparent md:shadow-none md:p-0"
+        class="hidden peer-checked:flex flex-col w-full bg-white md:flex md:flex-row md:static md:w-auto md:bg-transparent md:shadow-none md:p-0"
       >
         <ul
           class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-0 text-lg md:text-xl w-full md:m-auto"
@@ -46,7 +46,6 @@
         </ul>
       </nav>
 
-      <!-- lien de téléchargement du cv -->
       <div
         class="items-center gap-2 bg-black h-10 text-white text-center px-4 py-2 rounded-md hover:scale-105 transition duration-300 hidden md:flex"
       >
